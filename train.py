@@ -45,7 +45,7 @@ def parse_args():
 
 
 if __name__ == '__main__':
-
+#python train.py --model_name MLP --data_name JNU --data_dir D:/0-Data/2-benchmark/Data/Mechanical-datasets/JNU --normlizetype mean-std --processing_type O_A --checkpoint_dir D:/0-Data/2-benchmark/Benchmark/Benchmark_Results/Order_split/SEU/MLP_mean-std_augmentation
     args = parse_args()
     os.environ['CUDA_VISIBLE_DEVICES'] = args.cuda_device.strip()
     # Prepare the saving path for the model

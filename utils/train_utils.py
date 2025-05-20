@@ -135,8 +135,10 @@ class train_utils(object):
                     self.model.eval()
                 for batch_idx, (inputs, labels) in enumerate(self.dataloaders[phase]):
                     inputs = inputs.to(self.device)
+                    print(inputs.shape)
                     labels = labels.to(self.device)
-
+                    print(labels.shape)
+                    
                     # Do the learning process, in val, we do not care about the gradient for relaxing
                     with torch.set_grad_enabled(phase == 'train'):
 
