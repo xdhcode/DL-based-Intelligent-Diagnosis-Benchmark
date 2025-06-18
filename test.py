@@ -2,3 +2,5 @@
 #pip list --format=freeze | % { $_.Split('=')[0] } > requirements.txt
 #安装库
 #pip install -r requirements.txt
+from CNN_Datasets import test
+test.main()
